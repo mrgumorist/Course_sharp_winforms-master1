@@ -20,6 +20,14 @@ namespace Course_sharp_winforms
             InitializeComponent();
         }
 
+        public CookPanel CookPanel
+        {
+            get => default(CookPanel);
+            set
+            {
+            }
+        }
+
         private void Label4_Click(object sender, EventArgs e)
         {
             CookPanel cook = new CookPanel(UserTemp);

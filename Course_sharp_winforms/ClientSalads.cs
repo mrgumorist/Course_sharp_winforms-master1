@@ -19,6 +19,14 @@ namespace Course_sharp_winforms
             UserTemp = user;
         }
 
+        public Client Client
+        {
+            get => default(Client);
+            set
+            {
+            }
+        }
+
         private void Client_Load(object sender, EventArgs e)
         {
 

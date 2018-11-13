@@ -22,6 +22,22 @@ namespace Course_sharp_winforms
 
         }
 
+        public Login Login
+        {
+            get => default(Login);
+            set
+            {
+            }
+        }
+
+        public CookPanelCompleted CookPanelCompleted
+        {
+            get => default(CookPanelCompleted);
+            set
+            {
+            }
+        }
+
         private void CookPanel_Load(object sender, EventArgs e)
         {
             var temp=SingleTon.getInstance();

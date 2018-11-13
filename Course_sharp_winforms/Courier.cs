@@ -24,6 +24,14 @@ namespace Course_sharp_winforms
 
         }
 
+        public Login Login
+        {
+            get => default(Login);
+            set
+            {
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (Helper.IDSelected != -1 && users.Count != 0)

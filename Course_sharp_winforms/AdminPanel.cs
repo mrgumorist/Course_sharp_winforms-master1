@@ -21,6 +21,14 @@ namespace Course_sharp_winforms
           
         }
 
+        public Login Login
+        {
+            get => default(Login);
+            set
+            {
+            }
+        }
+
         private void AdminPanel_Load(object sender, EventArgs e)
         {
             var temp = SingleTon.getInstance();

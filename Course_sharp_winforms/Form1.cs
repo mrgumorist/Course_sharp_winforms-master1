@@ -175,5 +175,37 @@ namespace Course_sharp_winforms
             {
             }
         }
+
+        public Client Client
+        {
+            get => default(Client);
+            set
+            {
+            }
+        }
+
+        public CookPanel CookPanel
+        {
+            get => default(CookPanel);
+            set
+            {
+            }
+        }
+
+        public Courier Courier
+        {
+            get => default(Courier);
+            set
+            {
+            }
+        }
+
+        public AdminPanel AdminPanel
+        {
+            get => default(AdminPanel);
+            set
+            {
+            }
+        }
     }
 }

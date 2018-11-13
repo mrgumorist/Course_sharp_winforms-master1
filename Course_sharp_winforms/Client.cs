@@ -19,6 +19,70 @@ namespace Course_sharp_winforms
             UserTemp = user;
         }
 
+        public Login Login
+        {
+            get => default(Login);
+            set
+            {
+            }
+        }
+
+        public ClientBurgers ClientBurgers
+        {
+            get => default(ClientBurgers);
+            set
+            {
+            }
+        }
+
+        public Basket Basket
+        {
+            get => default(Basket);
+            set
+            {
+            }
+        }
+
+        public ClientSalads ClientSalads
+        {
+            get => default(ClientSalads);
+            set
+            {
+            }
+        }
+
+        public DrinksForm DrinksForm
+        {
+            get => default(DrinksForm);
+            set
+            {
+            }
+        }
+
+        public ClientBurgers ClientBurgers1
+        {
+            get => default(ClientBurgers);
+            set
+            {
+            }
+        }
+
+        public DesertClient DesertClient
+        {
+            get => default(DesertClient);
+            set
+            {
+            }
+        }
+
+        public SnackForm SnackForm
+        {
+            get => default(SnackForm);
+            set
+            {
+            }
+        }
+
         private void Client_Load(object sender, EventArgs e)
         {
 

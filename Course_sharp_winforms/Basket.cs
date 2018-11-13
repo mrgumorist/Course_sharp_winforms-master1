@@ -22,7 +22,13 @@ namespace Course_sharp_winforms
            
         }
 
-     
+        public Client Client
+        {
+            get => default(Client);
+            set
+            {
+            }
+        }
 
         private void Label4_Click(object sender, EventArgs e)
         {

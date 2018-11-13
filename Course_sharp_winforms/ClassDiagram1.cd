@@ -3,12 +3,16 @@
   <Class Name="Course_sharp_winforms.Login">
     <Position X="3.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAACAAAEABAAAAAAgAAAAAAAQ=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="RecoverPassPage" />
       <Property Name="Register" />
+      <Property Name="Client" />
+      <Property Name="CookPanel" />
+      <Property Name="Courier" />
+      <Property Name="AdminPanel" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Course_sharp_winforms.Register" Collapsed="true">
@@ -30,6 +34,138 @@
     <ShowAsAssociation>
       <Property Name="Login" />
     </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.Client" Collapsed="true">
+    <Position X="5.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAIhQgACAAgZgACACAQQQSAAAQAAAAUCA1AYBBIAA=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Login" />
+      <Property Name="ClientBurgers" />
+      <Property Name="Basket" />
+      <Property Name="ClientSalads" />
+      <Property Name="DrinksForm" />
+      <Property Name="ClientBurgers1" />
+      <Property Name="DesertClient" />
+      <Property Name="SnackForm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.CookPanel" Collapsed="true">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAABQAACAAAJCAAACBAQQCAAgIQAAAAAAQAYRAAAA=</HashCode>
+      <FileName>CookPanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Login" />
+      <Property Name="CookPanelCompleted" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.Courier" Collapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAAAEAAACAAAJAAAACABAACAAgIAAAAEEAQAQBAAAA=</HashCode>
+      <FileName>Courier.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Login" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.CookPanelCompleted" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAABAAACAAAJBAAACAAAACAEggoAAABAAAAQBAAAI=</HashCode>
+      <FileName>CookPanelCompleted.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CookPanel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.AdminPanel" Collapsed="true">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAQCAAAJAAAACAAAACAMg5cAwAAAASAURAAAE=</HashCode>
+      <FileName>AdminPanel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Login" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.Basket" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgIhAAECEAAZBAAACCQBAiAAAYYAAwRAAAAQBABAY=</HashCode>
+      <FileName>Basket.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.ClientBurgers" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8yAgIhAAACAAAZBAAACAYABiAAA4cAAQVAAgAQBBBAY=</HashCode>
+      <FileName>ClientBurgers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.ClientSalads" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8CAgIhAAACAAAZJAAACAQAAiAAAYYAAQVAAgAQBBBAY=</HashCode>
+      <FileName>ClientSalads.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.DesertClient" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8yAAIhAAACAAAZFAAACAQABiAAA4cAAQVAAgAQBBBAY=</HashCode>
+      <FileName>DesertClient.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.DrinksForm" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8CAgIhAAACAAAZBAAAGAQAAiEAAYYAAQVAAgAQBBBAY=</HashCode>
+      <FileName>DrinksForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.SnackForm" Collapsed="true">
+    <Position X="11.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8CAgIhAAACAAAZBAAACAQAAiQAAYYAAQVAAgAQBBBAY=</HashCode>
+      <FileName>SnackForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Course_sharp_winforms.WebInfo">
+    <Position X="9" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAAACAAAQCAAIAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Course_sharp_winforms.Helper">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGEAAAEABAgAACACAAACgCAAACBAAAAAAAAgAAAAACA=</HashCode>
+      <FileName>Helper.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
