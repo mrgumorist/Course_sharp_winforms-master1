@@ -17,6 +17,14 @@ namespace Course_sharp_winforms
             InitializeComponent();
         }
 
+        public Login Login
+        {
+            get => default(Login);
+            set
+            {
+            }
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             errorProvider1.Clear();

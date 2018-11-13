@@ -19,6 +19,14 @@ namespace Course_sharp_winforms
             InitializeComponent();
         }
 
+        public Login Login
+        {
+            get => default(Login);
+            set
+            {
+            }
+        }
+
         private void Register_Load(object sender, EventArgs e)
         {
 

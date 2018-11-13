@@ -157,4 +157,23 @@ namespace Course_sharp_winforms
 
        
     }
+
+    public class Login
+    {
+        public RecoverPassPage RecoverPassPage
+        {
+            get => default(RecoverPassPage);
+            set
+            {
+            }
+        }
+
+        public Register Register
+        {
+            get => default(Register);
+            set
+            {
+            }
+        }
+    }
 }
