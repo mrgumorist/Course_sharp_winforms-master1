@@ -57,43 +57,36 @@ namespace Course_sharp_winforms
             Close();
             client.Show();
         }
-
         private void Label5_Click(object sender, EventArgs e)
         {
             ClientSalads client = new ClientSalads(UserTemp);
             Close();
             client.Show();
         }
-
         private void PictureBox4_Click(object sender, EventArgs e)
         {
             ClientSalads client = new ClientSalads(UserTemp);
             Close();
             client.Show();
         }
-
-
         private void Label6_Click(object sender, EventArgs e)
         {
             SnackForm client = new SnackForm(UserTemp);
             Close();
             client.Show();
         }
-
         private void PictureBox7_Click(object sender, EventArgs e)
         {
             SnackForm client = new SnackForm(UserTemp);
             Close();
             client.Show();
         }
-
         private void Label7_Click(object sender, EventArgs e)
         {
             DesertClient client = new DesertClient(UserTemp);
             Close();
             client.Show();
         }
-
         private void PictureBox5_Click(object sender, EventArgs e)
         {
             DesertClient client = new DesertClient(UserTemp);
@@ -101,7 +94,6 @@ namespace Course_sharp_winforms
             client.Show();
 
         }
-
         private void Label8_Click(object sender, EventArgs e)
         {
             DrinksForm client = new DrinksForm(UserTemp);
@@ -109,29 +101,12 @@ namespace Course_sharp_winforms
             client.Show();
 
         }
-
         private void PictureBox6_Click(object sender, EventArgs e)
         {
             DrinksForm client = new DrinksForm(UserTemp);
             Close();
             client.Show();
         }
-
-        private void PictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Basket_Load(object sender, EventArgs e)
         {
             metroTextBox1.Clear();
@@ -148,12 +123,6 @@ namespace Course_sharp_winforms
 
 
         }
-
-        private void MetroTextBox1_Click(object sender, EventArgs e)
-        {
-          
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             metroTextBox1.Clear();
@@ -164,7 +133,6 @@ namespace Course_sharp_winforms
             UserTemp.OrderStatus = "AcceptedByUser";
 
         }
-
         private void Button2_Click(object sender, EventArgs e)
         {
             UserTemp.OrderStatus = "null";
@@ -173,7 +141,6 @@ namespace Course_sharp_winforms
             UserTemp.TotalPrice = 0;
             MetroFramework.MetroMessageBox.Show(this, "SUCCESFUL");
         }
-
         private void Basket_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F1)

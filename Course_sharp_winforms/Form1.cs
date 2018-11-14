@@ -13,14 +13,9 @@ namespace Course_sharp_winforms
     public partial class Form1 : Form
     {
         public Form1()
-        {
-
+        { 
             Helper.Deserialize();
-
-
             InitializeComponent();
-            
-        
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -119,7 +114,6 @@ namespace Course_sharp_winforms
 
             textBox1.Text = null;
             textBox2.Text = null;
-        
             Register register = new Register();
             register.ShowDialog();
         }
@@ -131,12 +125,8 @@ namespace Course_sharp_winforms
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-           
                 Helper.Serialize();
-           
-            
                 MetroFramework.MetroMessageBox.Show(this, "Thanks for using my program");
-            
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -147,17 +137,13 @@ namespace Course_sharp_winforms
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-       
             if(e.KeyCode == Keys.F1)
             {
                 WebInfo webInfo = new WebInfo();
                 webInfo.ShowDialog();
             }
         }
-
-       
     }
-
     public class Login
     {
         public RecoverPassPage RecoverPassPage

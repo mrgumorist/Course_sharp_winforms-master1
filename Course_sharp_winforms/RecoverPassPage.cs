@@ -71,5 +71,10 @@ namespace Course_sharp_winforms
                 webInfo.ShowDialog();
             }
         }
+
+        private void RecoverPassPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

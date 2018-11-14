@@ -11,35 +11,31 @@ namespace Course_sharp_winforms
 {
     static class Helper
     {
-
-        public const   int PriceOfFirst=6;
-        public const  int PriceOfSecond = 3;
+        public const int PriceOfFirst = 6;
+        public const int PriceOfSecond = 3;
         public const int PriceOf3 = 4;
-        public const int Drink =2;
+        public const int Drink = 2;
         public const int PriceOf4 = 8;
         public const int PriceOfSalad1 = 3;
         public const int PriceOfSalad2 = 4;
-        public const string path =@"Listik.txt";
+        public const string path = @"Listik.txt";
         static public int IDSelected { set; get; } = -1;
         static XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
         static public List<string> ListOfTypesUsers = new List<string>() { "Admin", "Client", "Courier", "Cook" };
         static public int GetID()
         {
-            var temp = SingleTon.getInstance();
-            int ID=temp.users.Count + 1;
-
+            var TempLink = SingleTon.getInstance();
+            int ID = TempLink.users.Count + 1;
             return ID;
         }
-      
         public static void Serialize()
         {
-            var temp = SingleTon.getInstance();
-
+            var TempLink = SingleTon.getInstance();
             try
             {
                 using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
                 {
-                    formatter.Serialize(fs, temp.users);
+                    formatter.Serialize(fs, TempLink.users);
                 }
             }
             catch
@@ -47,8 +43,6 @@ namespace Course_sharp_winforms
 
             }
         }
-
-
         public static void Deserialize()
         {
             try
@@ -58,23 +52,23 @@ namespace Course_sharp_winforms
                 {
                     newuser = (List<User>)formatter.Deserialize(fs);
                 }
-                var tetmp =SingleTon.getInstance();
+                var tetmp = SingleTon.getInstance();
                 tetmp.users = newuser;
             }
             catch
             {
-                
+
             }
-            
-            
+
+
         }
-      public static void PrintF1()
+        public static void PrintF1()
         {
 
 
 
 
-            
+
 
 
 

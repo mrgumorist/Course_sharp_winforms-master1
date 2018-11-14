@@ -19,7 +19,6 @@ namespace Course_sharp_winforms
         {
             UserTemp = Temp;
             InitializeComponent();
-          
         }
 
         public Login Login
@@ -29,13 +28,11 @@ namespace Course_sharp_winforms
             {
             }
         }
-
         private void AdminPanel_Load(object sender, EventArgs e)
         {
-            
-            var temp = SingleTon.getInstance();
-            toolStripStatusLabel2.Text = $"{temp.users.Count} are registered in this program";
-            foreach (var item in temp.users)
+            var TempLink = SingleTon.getInstance();
+            toolStripStatusLabel2.Text = $"{TempLink.users.Count} are registered in this program";
+            foreach (var item in TempLink.users)
             {
                
                     users.Add(item);
@@ -53,10 +50,7 @@ namespace Course_sharp_winforms
             {
                 if (dataGridView1.CurrentCell.RowIndex == i)
                 {
-
                     Helper.IDSelected = dataGridView1.CurrentCell.RowIndex;
-
-
                     break;
                 }
             }
@@ -66,8 +60,8 @@ namespace Course_sharp_winforms
         {
             if(dataGridView1.RowCount!=0&& Helper.IDSelected != -1 && users.Count != 0)
             {
-                var temp = SingleTon.getInstance();
-                temp.users.RemoveAt(Helper.IDSelected);
+                var TempLink = SingleTon.getInstance();
+                TempLink.users.RemoveAt(Helper.IDSelected);
                 MessageBox.Show("Remuved Succesful");
                 dataGridView1.DataSource = null;
                 users.Clear();
@@ -79,8 +73,8 @@ namespace Course_sharp_winforms
         {
             if (dataGridView1.RowCount != 0 && Helper.IDSelected != -1 && users.Count != 0)
             {
-                var temp = SingleTon.getInstance();
-                temp.users[Helper.IDSelected].IsBaned = true;
+                var TempLink = SingleTon.getInstance();
+                TempLink.users[Helper.IDSelected].IsBaned = true;
                 MessageBox.Show("Ban of user is Succesful");
                 dataGridView1.DataSource = null;
                 users.Clear();
@@ -90,8 +84,8 @@ namespace Course_sharp_winforms
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            var temp = SingleTon.getInstance();
-            temp.users[Helper.IDSelected].TotalPrice*=2;
+            var TempLink = SingleTon.getInstance();
+            TempLink.users[Helper.IDSelected].TotalPrice*=2;
             MessageBox.Show("Give premia is succsesful");
             dataGridView1.DataSource = null;
             users.Clear();
@@ -100,8 +94,8 @@ namespace Course_sharp_winforms
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            var temp = SingleTon.getInstance();
-            temp.users[Helper.IDSelected].TypeOfAccount=Helper.ListOfTypesUsers[0];
+            var TempLink = SingleTon.getInstance();
+            TempLink.users[Helper.IDSelected].TypeOfAccount=Helper.ListOfTypesUsers[0];
             MessageBox.Show("Give admin is succsesful");
             dataGridView1.DataSource = null;
             users.Clear();
@@ -110,8 +104,8 @@ namespace Course_sharp_winforms
 
         private void Button5_Click(object sender, EventArgs e)
         {
-            var temp = SingleTon.getInstance();
-            temp.users[Helper.IDSelected].TotalPrice /= 2;
+            var TempLink = SingleTon.getInstance();
+            TempLink.users[Helper.IDSelected].TotalPrice /= 2;
             MessageBox.Show("Multc is succsesful");
             dataGridView1.DataSource = null;
             users.Clear();
@@ -120,8 +114,8 @@ namespace Course_sharp_winforms
 
         private void button6_Click(object sender, EventArgs e)
         {
-            var temp = SingleTon.getInstance();
-            foreach (var item in temp.users)
+            var TempLink = SingleTon.getInstance();
+            foreach (var item in TempLink.users)
             {
                 if(item.TypeOfAccount!="Client")
                 {

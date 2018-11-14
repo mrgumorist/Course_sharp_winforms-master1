@@ -198,6 +198,7 @@
             this.Name = "RecoverPassPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RecoverPassPage";
+            this.Load += new System.EventHandler(this.RecoverPassPage_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RecoverPassPage_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
