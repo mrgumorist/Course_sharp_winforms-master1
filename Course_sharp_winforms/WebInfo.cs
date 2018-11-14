@@ -29,11 +29,7 @@ namespace Course_sharp_winforms
 
         private void WebInfo_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.F1)
-            {
-                WebInfo webInfo = new WebInfo();
-                webInfo.ShowDialog();
-            }
+           
         }
     }
 }
