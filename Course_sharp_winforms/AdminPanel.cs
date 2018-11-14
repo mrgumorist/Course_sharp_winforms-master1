@@ -12,6 +12,7 @@ namespace Course_sharp_winforms
 {
     public partial class AdminPanel : Form
     {
+
         public User UserTemp;
         List<User> users = new List<User>();
         public AdminPanel( User Temp)
@@ -31,7 +32,9 @@ namespace Course_sharp_winforms
 
         private void AdminPanel_Load(object sender, EventArgs e)
         {
+            
             var temp = SingleTon.getInstance();
+            toolStripStatusLabel2.Text = $"{temp.users.Count} are registered in this program";
             foreach (var item in temp.users)
             {
                
@@ -39,7 +42,8 @@ namespace Course_sharp_winforms
                 
             }
             dataGridView1.DataSource = users;
-      
+           
+
         }
 
         private void DataGridView1_SelectionChanged(object sender, EventArgs e)

@@ -31,28 +31,32 @@ namespace Course_sharp_winforms
         private void Label4_Click(object sender, EventArgs e)
         {
             CookPanel cook = new CookPanel(UserTemp);
-            this.Close();
+            Close();
             cook.ShowDialog();
+           
+            
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
         {
             CookPanel cook = new CookPanel(UserTemp);
-            this.Close();
+            Close();
             cook.ShowDialog();
+           
+           
         }
 
         private void Label5_Click(object sender, EventArgs e)
         {
             CookPanelCompleted cook = new CookPanelCompleted(UserTemp);
-            this.Close();
+            Close();
             cook.ShowDialog();
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)
         {
             CookPanelCompleted cook = new CookPanelCompleted(UserTemp);
-            this.Close();
+            Close();
             cook.ShowDialog();
         }
 
